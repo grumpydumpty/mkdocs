@@ -1,0 +1,36 @@
+FROM squidfunk/mkdocs-material:latest
+
+# set argument defaults
+#ARG LABEL_PREFIX=com.vmware.eocto
+
+# set timezone env var
+ENV TZ=Australia/Sydney
+
+# add metadata via labels
+#LABEL ${LABEL_PREFIX}.version="0.0.1"
+#LABEL ${LABEL_PREFIX}.git.repo="git@gitlab.eng.vmware.com:sydney/containers/mkdocs.git"
+#LABEL ${LABEL_PREFIX}.git.commit="DEADBEEF"
+#LABEL ${LABEL_PREFIX}.maintainer.name="Richard Croft"
+#LABEL ${LABEL_PREFIX}.maintainer.email="rcroft@vmware.com"
+#LABEL ${LABEL_PREFIX}.maintainer.url="https://gitlab.eng.vmware.com/rcroft/"
+#LABEL ${LABEL_PREFIX}.released="9999-99-99"
+#LABEL ${LABEL_PREFIX}.based-on="squidfunk/mkdocs-material:latest"
+#LABEL ${LABEL_PREFIX}.project="containers"
+
+# set working to user's home directory
+WORKDIR /root
+
+RUN pip install \
+    mkdocs-rss-plugin
+
+# set user
+#USER ${USER}
+
+# set working directory
+WORKDIR /workspace
+
+# ENTRYPOINT/CMD - bash or mkdocs?
+ENTRYPOINT ["/bin/bash"]
+
+#############################################################################
+# vim: ft=unix sync=dockerfile ts=4 sw=4 et tw=78:
