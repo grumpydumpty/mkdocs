@@ -46,7 +46,8 @@ RUN tdnf update -y && \
     echo -e "[safe]\n\tdirectory=/workspace" > /etc/gitconfig && \
     # install mkdocs, mkdocs-material, and desired plugins
     pip3 install --no-cache-dir --upgrade pip && \
-    pip3 install --no-cache-dir mkdocs mkdocs-material mkdocs-rss-plugin && \
+    #pip3 install --no-cache-dir mkdocs mkdocs-material mkdocs-rss-plugin && \
+    pip3 install --no-cache-dir -r docs/requirements.txt && \
     # clean up
     tdnf erase -y shadow && \
     tdnf clean all
