@@ -1,15 +1,15 @@
 # Project Information
-site_name: containers/mkdocs
-site_description: 
-site_url: https://euc.github.io/template/
+site_name: MkDocs
+site_description: Docker container with all the tools you need.
+site_url: http://containers.lab.net/mkdocs/
 site_author: Broadcom
 docs_dir: docs
 site_dir: .site
 use_directory_urls: true
 
 # Repository
-repo_url: gitlab.eng.vmware.com/sydney/containers/mkdocs
-edit_uri: blob/main/docs/
+repo_url: https://gitlab.eng.vmware.com/sydney/containers/mkdocs
+edit_uri: -/blob/main/docs
 
 # Copyright
 copyright: |
@@ -82,15 +82,15 @@ plugins:
 extra:
   config:
     repo_url: https://gitlab.eng.vmware.com/sydney/containers/mkdocs
-    repo_url_raw: https://raw.githubusercontent.com/euc/template/
+    repo_url_raw: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/-/raw/main
   version:
     default: latest
     provider: mike
   social:
-    - icon: fontawesome/brands/github
+    - icon: fontawesome/brands/gitlab
       link: https://gitlab.eng.vmware.com/sydney/containers/mkdocs
     - icon: fontawesome/solid/book
-      link: https://euc.github.io/template
+      link: http://containers.lab.net/mkdocs/
     - icon: fontawesome/solid/code
       link: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/docs
 extra_css:
@@ -130,22 +130,20 @@ markdown_extensions:
 
 # Navigation
 nav:
-- Getting Started:
+- Overview:
   - index.md
-  - Prerequisites: getting-started/requirements.md
-  - Source: getting-started/source.md
-  - Build: getting-started/build.md
-  - Use: getting-started/use.md
-  - Release Notes: getting-started/release-notes.md
-  - Release Milestones: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/milestones
+  - Getting Start: getting-started.md
+  - Components: components.md
+  - GitLab CI/CD: gitlab-ci.md
+  - Harbor Repo: harbor.md
+  - Release Notes: release-notes.md
+  - Release Milestones: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/-/milestones
   - License: license.md
-- Reference:
-  - documentation/index.md
 - Community:
   - community/index.md
   - Contributing: community/contributing.md
-  - Discussions: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/discussions
-  - Search Issues: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/issues
+  - Discussions: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/activity
+  - Search Issues: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/-/issues
   - Open an Issue: https://gitlab.eng.vmware.com/sydney/containers/mkdocs/-/issues/new
   - Support: community/support.md
   - Code of Conduct: community/code-of-conduct.md
