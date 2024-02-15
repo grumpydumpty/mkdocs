@@ -1,7 +1,7 @@
 # Project Information
 site_name: MkDocs
 site_description: Docker container with all the tools you need.
-site_url: http://mkdocs.lab.net
+site_url: http://containers.lab.net/mkdocs
 site_author: Broadcom
 docs_dir: docs
 site_dir: .site
