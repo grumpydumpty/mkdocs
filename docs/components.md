@@ -1,16 +1,14 @@
-# Components
+---
+title: Components
+draft: false
+date: 2022-01-31
+authors:
+  - grumpydumpty
+---
 
 This image includes the following components:
 
-This image includes the following components:
-
-| Component           | Version | Description                                                                 |
-|---------------------|---------|-----------------------------------------------------------------------------|
-| VMware Photon OS    | 5.0     | A Linux container host optimized for vSphere and cloud-computing platforms. |
-| Python              | XXX     |                                                                             |
-| Python-PIP          | XXX     |                                                                             |
-| MkDocs              | x.y.z   |                                                                             |
-| Material for MkDocs | z.y.x   |                                                                             |
+<!-- DO NOT EDIT BELOW THIS LINE -->
 
 | Package/Tool                         | Version  |
 |--------------------------------------|----------|
