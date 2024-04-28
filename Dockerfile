@@ -42,8 +42,7 @@ RUN tdnf update -y && \
     mkdir -p /workspace && \
     chown -R ${USER}:${GROUP} /workspace && \
     # set git config
-    git config --global --add safe.directory /workspace && \
-    echo -e "[safe]\n\tdirectory=/workspace" > /etc/gitconfig && \
+    git config --system --add safe.directory "/workspace" && \
     # install mkdocs, mkdocs-material, and desired plugins
     pip3 install --no-cache-dir --upgrade pip && \
     pip3 install --no-cache-dir mkdocs mkdocs-material mkdocs-rss-plugin mkdocs-git-revision-date-localized-plugin mkdocs-markdownextradata-plugin mkdocs-minify-plugin mkdocs-open-in-new-tab neoteroi-mkdocs && \
