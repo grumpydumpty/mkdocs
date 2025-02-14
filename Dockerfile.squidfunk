@@ -1,7 +1,7 @@
 FROM squidfunk/mkdocs-material:latest
 
 # set argument defaults
-#ARG LABEL_PREFIX=com.vmware.eocto
+#ARG LABEL_PREFIX=net.lab
 
 # set timezone env var
 ENV TZ=Australia/Sydney
