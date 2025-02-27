@@ -21,13 +21,6 @@ COPY ./requirements.txt .
 RUN pip3 install --no-cache-dir --upgrade pip && \
     pip3 install --no-cache-dir -r ./requirements.txt
 
-# harden and remove unnecessary packages
-RUN chown -R root:root /usr/local/bin/ && \
-    chown root:root /var/log && \
-    chmod 0640 /var/log && \
-    chown root:root /usr/lib/ && \
-    chmod 755 /usr/lib/
-
 # switch back to non-root user
 USER ${USER}:${GROUP}
 
