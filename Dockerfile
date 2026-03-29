@@ -31,7 +31,7 @@ EXPOSE 8000
 ENTRYPOINT ["mkdocs"]
 
 # start development server by default
-CMD ["serve", "--dev-addr=0.0.0.0:8000"]
+# CMD ["serve", "--dev-addr=0.0.0.0:8000"]
 
 #############################################################################
 # vim: ft=unix sync=dockerfile ts=4 sw=4 et tw=78:
